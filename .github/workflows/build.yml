@@ -117,9 +117,5 @@ jobs:
           path: target
       - uses: softprops/action-gh-release@v1
         with:
-          files: |
-            target/skija-shared-*.jar
-            target/skija-macos-x64-*.jmod
-            target/skija-macos-arm64-*.jmod
-            target/skija-linux-x64-*.jmod
-            target/skija-windows-x64-*.jmod
+          files: target/*.jmod
+
